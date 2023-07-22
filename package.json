@@ -21,7 +21,7 @@
     "timeout": "3m"
   },
   "engines": {
-    "node": ">= 10"
+    "node": ">= 16"
   },
   "scripts": {
     "artifacts": "napi artifacts",
