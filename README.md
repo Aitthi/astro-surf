@@ -24,6 +24,7 @@ import { handler as astroApp } from "./dist/server/entry.mjs";
 
 async function main() {
   console.log('Starting app...');
+  process.env.NODE_ENV = 'production';
   let app = AstroSurf.initialize(astroApp, {
     client_path: `${process.cwd()}/dist/client`
   });
