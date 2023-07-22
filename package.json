@@ -3,6 +3,15 @@
   "version": "0.1.0",
   "main": "index.js",
   "types": "index.d.ts",
+  "description": "Astro Surf is a server side rendering library for Astro built with Axum",
+  "repository": "https://github.com/Aitthi/astro-surf",
+  "keywords": [
+    "napi-rs",
+    "NAPI",
+    "N-API",
+    "Rust",
+    "astro"
+  ],
   "napi": {
     "name": "astro-surf",
     "triples": {
