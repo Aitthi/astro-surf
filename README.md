@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/astro-surf.svg?style=for-the-badge)](https://www.npmjs.com/package/astro-surf)
 
-Astro Surf is a server side rendering library for Astro built with [Axum](https://github.com/tokio-rs/axum)
+[Astro](https://astro.build/) Surf is a server side rendering library for Astro built with [Axum](https://github.com/tokio-rs/axum)
 
 
 ## Installation
