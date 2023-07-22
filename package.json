@@ -1,6 +1,6 @@
 {
   "name": "astro-surf",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "index.js",
   "types": "index.d.ts",
   "description": "Astro Surf is a server side rendering library for Astro built with Axum",
@@ -29,9 +29,6 @@
   "devDependencies": {
     "@napi-rs/cli": "^2.16.2",
     "ava": "^5.1.1"
-  },
-  "ava": {
-    "timeout": "3m"
   },
   "engines": {
     "node": ">= 16"
