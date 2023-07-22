@@ -1,6 +1,6 @@
 {
   "name": "astro-surf",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "index.js",
   "types": "index.d.ts",
   "description": "Astro Surf is a server side rendering library for Astro built with Axum",
@@ -42,7 +42,7 @@
     "universal": "napi universal",
     "version": "napi version",
     "dev": "cargo watch -q -c -s 'yarn build:debug' -w src -w index.js",
-    "publish:all": "napi prepublish -t npm && cp astro-surf.js dist && cp astro-surf.d.ts dist && cp package.json dist && cp README.md dist && cd dist && npm publish --access public"
+    "publish:all": "mkdir dist && napi prepublish -t npm && cp astro-surf.js dist && cp astro-surf.d.ts dist && cp package.json dist && cp README.md dist && cd dist && npm publish --access public"
   },
   "packageManager": "yarn@3.6.1"
 }
