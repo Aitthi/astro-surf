@@ -12,6 +12,10 @@
     "Rust",
     "astro"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "napi": {
     "name": "astro-surf",
     "triples": {
@@ -40,7 +44,8 @@
     "test": "ava",
     "universal": "napi universal",
     "version": "napi version",
-    "dev": "cargo watch -q -c -s 'yarn build:debug' -w src -w index.js"
+    "dev": "cargo watch -q -c -s 'yarn build:debug' -w src -w index.js",
+    "publish:all": "napi prepublish -t npm && cp astro-surf.js dist && cp astro-surf.d.ts dist && cp package.json dist && cp README.md dist && cd dist && npm publish --access public"
   },
   "packageManager": "yarn@3.6.1"
 }
