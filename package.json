@@ -1,0 +1,37 @@
+{
+  "name": "astro-surf",
+  "version": "0.1.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "napi": {
+    "name": "astro-surf",
+    "triples": {
+      "additional": [
+        "aarch64-apple-darwin",
+        "aarch64-unknown-linux-gnu"
+      ]
+    }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@napi-rs/cli": "^2.16.2",
+    "ava": "^5.1.1"
+  },
+  "ava": {
+    "timeout": "3m"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "scripts": {
+    "artifacts": "napi artifacts",
+    "build": "napi build --platform --release --js=astro-surf.js --dts=astro-surf.d.ts",
+    "build:debug": "napi build --platform --js=astro-surf.js --dts=astro-surf.d.ts",
+    "prepublishOnly": "napi prepublish -t npm",
+    "test": "ava",
+    "universal": "napi universal",
+    "version": "napi version",
+    "dev": "cargo watch -q -c -s 'yarn build:debug' -w src -w index.js"
+  },
+  "packageManager": "yarn@3.6.1"
+}
