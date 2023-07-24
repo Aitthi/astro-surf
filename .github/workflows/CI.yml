@@ -116,10 +116,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: bindings-${{ matrix.settings.target }}
-          path: |
-            ${{ env.APP_NAME }}.*.node
-            astro-surf.js
-            astro-surf.d.ts
+          path: ${{ env.APP_NAME }}.*.node
           if-no-files-found: error
   publish:
     name: Publish
@@ -142,6 +139,8 @@ jobs:
           path: artifacts
       - name: Move artifacts
         run: yarn artifacts
+      - name: build
+        run: yarn build
       - name: List packages
         run: ls -R ./npm
         shell: bash
