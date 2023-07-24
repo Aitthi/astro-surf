@@ -196,3 +196,5 @@ Cargo.lock
 
 *.node
 dev
+astro-surf.d.ts
+astro-surf.js
